@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block title %}Logowanie{% endblock %}
+
+{% block content %}
+
+<h1>Logownanie</h1>
+<div class="module">
+    <p>Zostałeś pomyślnie wylogowany. Możesz <a href="{% url " login" %}">zalogować się ponownie</a></p>
+</div>
+{% endblock %}
